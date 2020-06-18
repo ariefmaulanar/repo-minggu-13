@@ -15,8 +15,8 @@ class Send_email extends CI_Controller {
             'charset'   => 'utf-8',
             'protocol'  => 'smtp',
             'smtp_host' => 'smtp.gmail.com',
-            'smtp_user' => 'ariefmaulanarachman@gmail.com',  // Email gmail
-            'smtp_pass'   => 'puji1306',  // Password gmail
+            'smtp_user' => 'masdrong13@gmail.com',  // Email gmail
+            'smtp_pass'   => 'arip1306',  // Password gmail
             'smtp_crypto' => 'ssl',
             'smtp_port'   => 465,
             'crlf'    => "\r\n",
@@ -27,10 +27,10 @@ class Send_email extends CI_Controller {
         $this->load->library('email', $config);
 
         // Email dan nama pengirim
-        $this->email->from('no-reply@shopee.com', 'shopee.com');
+        $this->email->from('no-reply@shopee.co.id', 'shopee.co.id');
 
         // Email penerima
-        $this->email->to('ariefmaulanarachman@gmail.com'); // Ganti dengan email tujuan
+        $this->email->to('masdrong13@gmail.com'); // Ganti dengan email tujuan
 
         // Lampiran email, isi dengan url/path file
         $this->email->attach('File.png');
